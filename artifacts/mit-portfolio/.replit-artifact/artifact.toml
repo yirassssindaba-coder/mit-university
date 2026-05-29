@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "MIT Doctoral Research Portfolio"
+version = "1.0.0"
+id = "artifacts/mit-portfolio"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20638
+
+[services.development]
+run = "pnpm --filter @workspace/mit-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mit-portfolio", "run", "build" ]
+publicDir = "artifacts/mit-portfolio/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20638"
+BASE_PATH = "/"
