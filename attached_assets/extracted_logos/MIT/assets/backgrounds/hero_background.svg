@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#750014"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="100%" height="100%" rx="42" fill="#f8fafc"/>
+  <rect x="50" y="50" width="1100" height="620" rx="38" fill="url(#g)" filter="url(#shadow)"/>
+  <circle cx="1050" cy="135" r="180" fill="#F4E6E9" opacity="0.20"/>
+  <circle cx="970" cy="610" r="240" fill="#ffffff" opacity="0.08"/>
+  <rect x="90" y="100" width="210" height="210" rx="42" fill="#ffffff" opacity="0.12"/>
+  <path d="M140 245 L190 145 L240 245 M162 205 H218" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="340" y="165" fill="#ffffff" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="700">Research-First AI Systems Portfolio for Data-Centric Learning, Vision, NLP, and Societal Impact</text>
+  <text x="340" y="232" fill="#ffffff" font-size="28" font-family="Arial, Helvetica, sans-serif" opacity="0.86">research-first, sharp, minimal, original, reproducible, systems-thinking</text>
+  <line x1="340" y1="280" x2="1040" y2="280" stroke="#fff" opacity="0.22" stroke-width="2"/>
+  <text x="340" y="350" fill="#ffffff" font-size="30" font-family="Arial, Helvetica, sans-serif" font-weight="700">Portfolio Asset Source Card</text>
+  <text x="340" y="405" fill="#ffffff" font-size="23" font-family="Arial, Helvetica, sans-serif" opacity="0.87">Neutral design asset - not an official university logo.</text>
+  <text x="340" y="446" fill="#ffffff" font-size="23" font-family="Arial, Helvetica, sans-serif" opacity="0.87">Use official marks only according to university brand rules.</text>
+  <rect x="340" y="505" width="385" height="58" rx="29" fill="#ffffff" opacity="0.16"/>
+  <text x="370" y="543" fill="#ffffff" font-size="22" font-family="Arial, Helvetica, sans-serif">Modern dynamic upload-ready asset</text>
+</svg>
