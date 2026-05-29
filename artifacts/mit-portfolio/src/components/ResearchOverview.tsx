@@ -52,7 +52,7 @@ export default function ResearchOverview() {
       data-testid="research-overview-section"
       className="py-24 bg-background"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="w-full max-w-[min(1120px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,7 +69,7 @@ export default function ResearchOverview() {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left: Narrative */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}

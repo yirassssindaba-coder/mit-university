@@ -23,7 +23,7 @@ export default function LabFit() {
       />
       <div className="absolute inset-0 bg-[#0A1628]/90" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 w-full max-w-[min(1120px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function LabFit() {
         </motion.div>
 
         {/* Lab cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" data-testid="lab-cards">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5" data-testid="lab-cards">
           {proposal.labFit.labs.map((lab, i) => (
             <motion.div
               key={i}

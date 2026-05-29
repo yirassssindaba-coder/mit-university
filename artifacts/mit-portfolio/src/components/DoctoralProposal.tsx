@@ -36,7 +36,7 @@ export default function DoctoralProposal() {
       data-testid="doctoral-proposal-section"
       className="py-24 bg-background"
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="w-full max-w-[min(1000px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -63,7 +63,7 @@ export default function DoctoralProposal() {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Main content — 2/3 width */}
           <motion.div
             className="lg:col-span-2"

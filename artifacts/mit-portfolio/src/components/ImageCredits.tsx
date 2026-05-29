@@ -47,7 +47,7 @@ export default function ImageCredits() {
       data-testid="image-credits-section"
       className="py-16 bg-muted/20 border-t border-border"
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="w-full max-w-[min(1000px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

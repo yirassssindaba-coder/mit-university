@@ -31,7 +31,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#0A1628]/85 via-[#0A1628]/88 to-[#0A1628]/95" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 py-20">
+      <div className="relative z-10 w-full max-w-[min(1000px,calc(100vw-32px))] mx-auto px-4 sm:px-6 py-16 sm:py-20">
         {/* Research tag */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -54,8 +54,12 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-6"
-          style={{ fontFamily: "Inter, sans-serif" }}
+          className="font-bold text-white tracking-tight mb-6 max-w-[980px]"
+          style={{
+            fontFamily: "Inter, sans-serif",
+            fontSize: "clamp(2.2rem, 6vw, 4.8rem)",
+            lineHeight: 1.05,
+          }}
         >
           Toward Responsible AI Systems
           <br />
@@ -88,19 +92,19 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex flex-wrap gap-4 mt-10"
+          className="flex flex-wrap gap-3 mt-8 sm:mt-10"
         >
           <button
             data-testid="hero-cta-proposal"
             onClick={() => scrollToSection("doctoral-proposal")}
-            className="px-6 py-3 bg-[#A31F34] hover:bg-[#8a1929] text-white text-sm font-semibold tracking-wide transition-all duration-200 rounded-sm border border-[#A31F34] hover:border-[#8a1929]"
+            className="px-5 py-2.5 sm:px-6 sm:py-3 bg-[#A31F34] hover:bg-[#8a1929] active:scale-95 text-white text-sm font-semibold tracking-wide transition-all duration-200 rounded-sm border border-[#A31F34] hover:border-[#8a1929]"
           >
             View Doctoral Proposal
           </button>
           <button
             data-testid="hero-cta-download"
             onClick={() => scrollToSection("download-center")}
-            className="px-6 py-3 bg-transparent hover:bg-white/10 text-white text-sm font-semibold tracking-wide transition-all duration-200 rounded-sm border border-white/30 hover:border-white/60"
+            className="px-5 py-2.5 sm:px-6 sm:py-3 bg-transparent hover:bg-white/10 active:scale-95 text-white text-sm font-semibold tracking-wide transition-all duration-200 rounded-sm border border-white/30 hover:border-white/60"
           >
             Download Evidence Pack
           </button>
@@ -111,7 +115,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.65 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-0 mt-16 border border-white/10 rounded-sm overflow-hidden"
+          className="grid grid-cols-2 md:grid-cols-4 gap-0 mt-10 sm:mt-16 border border-white/10 rounded-sm overflow-hidden"
         >
           {STATS.map((stat, i) => (
             <div

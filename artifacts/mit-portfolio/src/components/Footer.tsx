@@ -3,14 +3,15 @@ export default function Footer() {
 
   return (
     <footer data-testid="footer" className="bg-[#060F1C] border-t border-[#1E2D42] py-12">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-10 mb-10">
+      <div className="w-full max-w-[min(1120px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mb-10">
           {/* Logo + disclaimer */}
           <div data-testid="footer-brand">
             <img
-              src="/assets/logos/mit_logo_transparent.png"
+              src="/assets/logos/mit_logo_with_text.png"
               alt="MIT Logo (reference)"
-              className="h-10 w-auto object-contain mb-4 opacity-70"
+              className="w-auto object-contain mb-4 opacity-70"
+              style={{ height: "36px", maxWidth: "160px" }}
             />
             <p className="text-xs text-gray-500 leading-relaxed">
               This is an independent doctoral application portfolio. It is not affiliated with, endorsed by, or

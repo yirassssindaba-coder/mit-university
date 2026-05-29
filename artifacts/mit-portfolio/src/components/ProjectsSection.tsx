@@ -14,7 +14,7 @@ export default function ProjectsSection() {
       data-testid="projects-section"
       className="py-24 bg-muted/30"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="w-full max-w-[min(1120px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
 
         {/* Cards grid — first 4 in 2-col, last card full-width */}
         <div className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.slice(0, 4).map((project, i) => (
               <motion.div
                 key={project.id}

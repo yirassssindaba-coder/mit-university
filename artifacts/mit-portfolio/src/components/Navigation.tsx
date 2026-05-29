@@ -67,23 +67,24 @@ export default function Navigation() {
         scrolled ? "bg-[#0A1628]/97 backdrop-blur-md shadow-lg" : "bg-[#0A1628]"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-0">
-        <div className="flex items-center justify-between h-16">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6">
+        <div className="flex items-center justify-between h-14 sm:h-16 gap-3">
           {/* Logo + Disclaimer */}
-          <div className="flex flex-col justify-center gap-0.5">
+          <div className="flex flex-col justify-center gap-0.5 flex-shrink-0">
             <img
-              src="/assets/logos/mit_logo_transparent.png"
+              src="/assets/logos/mit_logo_with_text.png"
               alt="MIT Logo (reference)"
-              className="h-8 w-auto object-contain"
+              className="w-auto object-contain"
+              style={{ height: "36px", maxWidth: "160px" }}
               data-testid="nav-mit-logo"
             />
-            <span className="text-[10px] text-gray-400 leading-none tracking-wide">
+            <span className="text-[9px] text-gray-400 leading-none tracking-wide hidden sm:block">
               Independent Portfolio — Not an Official MIT Page
             </span>
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-1" data-testid="nav-links-desktop">
+          <div className="hidden lg:flex items-center gap-0.5 flex-wrap" data-testid="nav-links-desktop">
             {NAV_LINKS.map((link) => {
               const sectionId = link.href.replace("#", "");
               const isActive = activeSection === sectionId;
@@ -93,7 +94,7 @@ export default function Navigation() {
                   href={link.href}
                   onClick={(e) => scrollTo(e, link.href)}
                   data-testid={`nav-link-${sectionId}`}
-                  className={`px-3 py-2 text-[13px] font-medium tracking-wide transition-colors duration-200 rounded-sm ${
+                  className={`px-2.5 py-2 text-[12px] font-medium tracking-wide transition-colors duration-200 rounded-sm whitespace-nowrap ${
                     isActive
                       ? "text-white border-b-2 border-[#A31F34]"
                       : "text-gray-300 hover:text-white"
@@ -107,7 +108,7 @@ export default function Navigation() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 text-gray-300 hover:text-white"
+            className="lg:hidden p-2 text-gray-300 hover:text-white flex-shrink-0"
             onClick={() => setMenuOpen(!menuOpen)}
             data-testid="nav-mobile-toggle"
             aria-label="Toggle navigation"

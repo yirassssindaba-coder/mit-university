@@ -190,7 +190,7 @@ export default function DownloadCenter() {
       data-testid="download-center-section"
       className="py-24 bg-background"
     >
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="w-full max-w-[min(1000px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

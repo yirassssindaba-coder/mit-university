@@ -36,7 +36,7 @@ export default function ResearchStatement() {
       data-testid="research-statement-section"
       className="py-24 bg-muted/20"
     >
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="w-full max-w-[min(880px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

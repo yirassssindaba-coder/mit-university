@@ -22,7 +22,7 @@ export default function AboutSection() {
       />
       <div className="absolute inset-0 bg-[#0A1628]/88" />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6">
+      <div className="relative z-10 w-full max-w-[min(880px,calc(100vw-32px))] mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

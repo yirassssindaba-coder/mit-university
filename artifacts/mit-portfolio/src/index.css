@@ -216,14 +216,30 @@
 }
 
 @layer base {
-  * {
+  *, *::before, *::after {
+    box-sizing: border-box;
     @apply border-border;
+    min-width: 0;
   }
   html {
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  img, svg, video {
+    max-width: 100%;
+    height: auto;
+  }
+  p, h1, h2, h3, h4, h5, h6, span, li, td, th {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 }
 
@@ -244,7 +260,7 @@
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
   gap: 1.5rem;
 }
 
